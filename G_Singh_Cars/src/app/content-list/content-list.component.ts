@@ -71,4 +71,8 @@ export class ContentListComponent {
     ]
   }
 
+  log(card: any){
+    
+  }
+
 }

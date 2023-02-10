@@ -1,1 +1,12 @@
-<p>content-list works!</p>
+    <div *ngFor="let card of cards | slice: 0:5" class="card">
+        <img [src]="card.imgURL" alt={{card.title}} (click)="log(card)">
+        <h1>{{card.title}}</h1>
+        <p>{{card.description}}</p>
+        <div>Creator: {{card.creator}}</div>
+        <div>Type: {{card.type}}</div>
+        <div>Tags: 
+            <ng-container *ngFor="let tag of card.tags">
+                {{tag}},
+            </ng-container>
+        </div>
+    </div>
