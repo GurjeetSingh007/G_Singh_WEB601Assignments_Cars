@@ -72,7 +72,8 @@ export class ContentListComponent {
   }
 
   log(card: any){
-    
+    console.log(`ID: ${card.id}`);
+    console.log(`Title: ${card.title}`);
   }
 
 }
