@@ -65,7 +65,6 @@ export class ContentListComponent {
         description: "The Mercedes-Benz G-Class, sometimes colloquially called the G-Wagen[3] (as an abbreviation of Geländewagen) is a four-wheel drive automobile manufactured by Magna Steyr (formerly Steyr-Daimler-Puch) in Austria and sold by Mercedes-Benz. Originally developed as a military off-roader, later more luxurious models were added to the line. In certain markets, it has been sold under the Puch name as Puch G until 2000. ",
         creator: "Mercedes Inc.",
         imgURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Gklass.jpg/1024px-Gklass.jpg",
-        type: "SUV Car"
       },
     ]
   }
