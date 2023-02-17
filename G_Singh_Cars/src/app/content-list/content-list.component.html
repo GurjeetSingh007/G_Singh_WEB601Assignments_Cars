@@ -1,3 +1,16 @@
+
+<div>
+    <input type="text" [(ngModel)]="titleValue" placeholder="Search For Title...">
+    <button (click)="titleSearch()">Search</button>
+</div>
+
+<div *ngIf="isTitleFound !== null">
+    <p [style.color]="isTitleFound ? 'green' : 'red'">
+        {{isTitleFound ? 'Title Found' : 'Title Not Found'}}
+    </p>
+</div>
+
+
 <div>
     <h1>NO Type</h1>
     <div *ngFor="let card of cards | contentTypeFilter" class="no-type card">

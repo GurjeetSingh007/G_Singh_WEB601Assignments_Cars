@@ -8,6 +8,12 @@ import { Content } from '../helper-files/content-interface';
 })
 export class ContentListComponent {
   cards: Content[];
+  titleValue: string = '';
+  isTitleFound: boolean | null = null;
+
+  titleSearch(){
+    this.isTitleFound = this.cards.some(card => card.title.toLowerCase() === this.titleValue.toLowerCase());
+  }
 
   constructor(){
     this.cards = [
