@@ -24,11 +24,11 @@
         <h1>{{card.title}}</h1>
         <p>{{card.description}}</p>
         <div>Creator: {{card.creator}}</div>
-        <div appHoverAffect>Type: {{card.type}}</div>
-        <div>Tags: 
-            <ng-container *ngFor="let tag of card.tags">
+        <div appHoverAffect='underline'>Type: {{card.type}}</div>
+        <div *ngIf="card.tags">Tags: 
+            <span *ngFor="let tag of card.tags" appHoverAffect="bold">
                 {{tag}},
-            </ng-container>
+            </span>
         </div>
     </div>
 </div>
@@ -45,11 +45,11 @@
         <h1>{{card.title}}</h1>
         <p>{{card.description}}</p>
         <div>Creator: {{card.creator}}</div>
-        <div appHoverAffect>Type: {{card.type}}</div>
-        <div>Tags: 
-            <ng-container *ngFor="let tag of card.tags">
+        <div appHoverAffect='underline'>Type: {{card.type}}</div>
+        <div *ngIf="card.tags">Tags: 
+            <span *ngFor="let tag of card.tags" appHoverAffect="bold">
                 {{tag}},
-            </ng-container>
+            </span>
         </div>
     </div>
 </div>
@@ -67,11 +67,11 @@
         <h1>{{card.title}}</h1>
         <p>{{card.description}}</p>
         <div>Creator: {{card.creator}}</div>
-        <div appHoverAffect>Type: {{card.type}}</div>
-        <div>Tags: 
-            <ng-container *ngFor="let tag of card.tags">
+        <div appHoverAffect='underline'>Type: {{card.type}}</div>
+        <div *ngIf="card.tags">Tags: 
+            <span *ngFor="let tag of card.tags" appHoverAffect="bold">
                 {{tag}},
-            </ng-container>
+            </span>
         </div>
     </div>
 </div>
