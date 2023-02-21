@@ -32,7 +32,7 @@ export class ContentListComponent {
         title: "Dodge Challanger",
         description: "The Dodge Challenger is the name of three different generations of automobiles (two of those being pony cars) produced by American automobile manufacturer Dodge. However, the first use of the Challenger name by Dodge was in 1959 for marketing a value version of the full-sized Coronet Silver Challenger. ",
         creator: "Dodge Inc.",
-        imgURL: "https://www.goodwood.com/globalassets/.road--racing/road/news/2022/8-august/dodge-charger-ev/dodge-charger-ev-08.jpg?crop=(0,0,2600,1463)&width=1600",
+        
         type: "Muscle Car"
       },
       {
@@ -64,7 +64,7 @@ export class ContentListComponent {
         title: "Mercedes-Benz S-Class",
         description: "The Mercedes-Benz S-Class, formerly known as Sonderklasse (German for special class, abbreviated as S-Klasse), is a series of full-sized luxury sedans, limousines and armored sedans produced by the German automaker Mercedes-Benz, a division of the German company Mercedes-Benz. The S-Class is the designation for top-of-the-line Mercedes-Benz models and was officially introduced in 1972 with the W116, and has remained in use ever since. The S-Class is the flagship vehicle for Mercedes-Benz. ",
         creator: "Mercedes Inc.",
-        imgURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Mercedes-Benz_W223_IMG_6663.jpg/1280px-Mercedes-Benz_W223_IMG_6663.jpg",
+        
       },
       {
         id: 6,
