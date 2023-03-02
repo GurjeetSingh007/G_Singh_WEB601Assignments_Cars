@@ -16,6 +16,12 @@ export class ContentListComponent {
     this.isTitleFound = this.cards.some(card => card.title.toLowerCase() === this.titleValue.toLowerCase());
   }
 
+  addCard(newCard: any){
+    this.cards.push(newCard);
+    this.cards= [...this.cards];
+    console.log("Your card is added")
+  }
+
   constructor(){
     this.cards = [
       {
