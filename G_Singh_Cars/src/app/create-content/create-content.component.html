@@ -1,1 +1,18 @@
-<p>create-content works!</p>
+<div>
+
+   <p> ID: <br> <input type="number" [(ngModel)]="newCard.id"> <br> </p>
+
+   <p> Title: <br> <input type="text" [(ngModel)]="newCard.title"> <br> </p>
+
+   <p> Description: <br> <input type="text" [(ngModel)]="newCard.description"> <br> </p>
+
+   <p> Creator: <br> <input type="text" [(ngModel)]="newCard.creator"> <br> </p>
+
+   <p> Image Link: <br> <input type="text" [(ngModel)]="newCard.imgURL"> <br> </p>
+
+   <p> Type: <br> <input type="text" [(ngModel)]="newCard.type"> <br> </p>
+
+    <div>
+        <button (click)="addCard()">Add Content</button>
+    </div>
+</div>
