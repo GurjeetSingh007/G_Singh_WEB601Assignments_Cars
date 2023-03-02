@@ -1,16 +1,22 @@
 <div>
 
-   <p> ID: <br> <input type="number" [(ngModel)]="newCard.id"> <br> </p>
+    <br>
 
-   <p> Title: <br> <input type="text" [(ngModel)]="newCard.title"> <br> </p>
+   <span class="field"> ID: <br> <input type="number" [(ngModel)]="newCard.id"> </span>
 
-   <p> Description: <br> <input type="text" [(ngModel)]="newCard.description"> <br> </p>
+   <span class="field2">Title: <input type="text" [(ngModel)]="newCard.title"> <br> </span>
+    
+   <br>
 
-   <p> Creator: <br> <input type="text" [(ngModel)]="newCard.creator"> <br> </p>
+   <span class="field3"> Description: <br> <input type="text" [(ngModel)]="newCard.description"> </span>
 
-   <p> Image Link: <br> <input type="text" [(ngModel)]="newCard.imgURL"> <br> </p>
+   <span class="field4"> Creator: <input type="text" [(ngModel)]="newCard.creator"> <br> </span>
 
-   <p> Type: <br> <input type="text" [(ngModel)]="newCard.type"> <br> </p>
+   <br>
+   
+   <span class="field5"> Image Link: <br> <input type="text" [(ngModel)]="newCard.imgURL"> </span>
+
+   <span class="field6"> Type: <input type="text" [(ngModel)]="newCard.type"> <br> </span>
 
     <div>
         <button (click)="addCard()">Add Content</button>
