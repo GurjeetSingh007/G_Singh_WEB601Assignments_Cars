@@ -2,9 +2,9 @@
 
 </app-create-content>
 
-<div>
-    <input type="text" [(ngModel)]="titleValue" placeholder="Search For Title...">
-    <button class="search" (click)="titleSearch()">Search</button>
+<div class="search">
+    <input type="text"  [(ngModel)]="titleValue" placeholder="Search For Title...">
+    <button (click)="titleSearch()"> Search</button>
 </div>
 
 <div *ngIf="isTitleFound !== null">
@@ -15,7 +15,8 @@
 
 
 <div>
-    <h1>NO Type</h1>
+    <h1 class="tt">NO Type</h1>
+    <div class="parent">
     <div *ngFor="let card of cards | contentTypeFilter" class="no-type card">
         
         <div *ngIf="card.imgURL; else NoImage">
@@ -35,9 +36,11 @@
         </div>
     </div>
 </div>
+</div>
 
 <div>
-    <h1>Muscle Car</h1>
+    <h1 class="tt">Muscle Car</h1>
+    <div class="parent">
     <div *ngFor="let card of cards | contentTypeFilter:'Muscle Car'" class="muscle-car card">
         <div *ngIf="card.imgURL; else NoImage">
             <img [src]="card.imgURL" alt={{card.title}} (click)="log(card)">
@@ -56,10 +59,12 @@
         </div>
     </div>
 </div>
+</div>
 
 
 <div>
-    <h1>Sports Car</h1>
+    <h1 class="tt">Sports Car</h1>
+    <div class="parent">
     <div *ngFor="let card of cards | contentTypeFilter:'Sports Car'" class="sport-car card">
         <div *ngIf="card.imgURL; else NoImage">
             <img [src]="card.imgURL" alt={{card.title}} (click)="log(card)">
@@ -77,4 +82,5 @@
             </span>
         </div>
     </div>
+</div>
 </div>

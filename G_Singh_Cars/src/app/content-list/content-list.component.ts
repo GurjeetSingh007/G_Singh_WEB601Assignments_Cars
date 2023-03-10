@@ -52,7 +52,7 @@ export class ContentListComponent {
       {
         id: 3,
         title: "Audi A6",
-        description: "The Audi A6 is an executive car made by the German automaker Audi. Now in its fifth generation, the successor to the Audi 100 is manufactured in Neckarsulm, Germany, and is available in saloon and estate configurations, the latter marketed by Audi as the Avant. ",
+        description: "The Audi A6 is an executive car made by the German automaker Audi. Now in its fifth generation, the successor to the Audi 100 is manufactured in Neckarsulm, Germany, and is available in saloon and estate configurations, the latter marketed by Audi as the Avant.Now in its fifth generation, the successor to the Audi 100 is manufactured in Neckarsulm, Germany, and is available in saloon and estate configurations. ",
         creator: "Audi Inc.",
         imgURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/2018_Audi_A6_Sport_40_TDi_S-A_2.0.jpg/1280px-2018_Audi_A6_Sport_40_TDi_S-A_2.0.jpg",
         type: "Sports Car"
