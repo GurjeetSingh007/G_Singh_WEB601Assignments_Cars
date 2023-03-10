@@ -1,1 +1,19 @@
+<div class="no-type card">
+        
+        <div *ngIf="topContent.imgURL; else NoImage">
+            <img [src]="topContent.imgURL" alt={{topContent.title}} (click)="log()">
+        </div>
+        <ng-template #NoImage>
+            <img [src]="img" alt={{topContent.title}} (click)="log()">
+        </ng-template>
+        <h1>{{topContent.title}}</h1>
+        <p>{{topContent.description}}</p>
+        <div>Creator: {{topContent.creator}}</div>
+        <div appHoverAffect='underline'>Type: {{topContent.type}}</div>
+        <div *ngIf="topContent.tags">Tags: 
+            <span *ngFor="let tag of topContent.tags" appHoverAffect="bold">
+                {{tag}},
+            </span>
+        </div>
+    </div>
 <app-content-list></app-content-list>
