@@ -1,13 +1,48 @@
-.field2{
-    margin: 131px;
+.container{
+    margin: auto;
 }
-.field4{
-    margin: 100px;
+
+.center{
+    width: 700px;
+    margin: auto;
+    padding: 35px;
+    color: white;
+}
+.field{
+    margin: 73px;
+}
+.field2{
+    margin: 23px;
+}
+.field5{
+    margin: 3px;
 }
 .field6{
-  margin: 122px;
-  }
+    margin: 82px;
+}
+.field4{
+    margin: 62px;
+}
 button{
-     margin-top: 13px;
-    margin-bottom: 17px; 
+    display: block;
+    margin: 0 auto;
+padding: 8px;
+margin-top: 12px;
+}
+hr{
+    width: 1200px;
+    height: 2.5px;
+
+}
+
+
+h3{
+    color: white;
+    text-decoration-line: overline;
+    width: 210px;
+    margin: auto;
+    margin-top: 5px;
+    padding: 12px;
+    padding-left: 20px;
+    font-size: 1.9em;
 }

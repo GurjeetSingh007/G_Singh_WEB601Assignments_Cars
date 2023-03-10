@@ -1,24 +1,28 @@
-<div>
+<div class="container">
+    <h3> ADD A CAR </h3>
+<br>
 
-    <br>
-
-   <span class="field"> ID: <br> <input type="number" [(ngModel)]="newCard.id"> </span>
+<div class="center">
+     <span class="field"> ID:  <input type="number" [(ngModel)]="newCard.id"> </span>
 
    <span class="field2">Title: <input type="text" [(ngModel)]="newCard.title"> <br> </span>
     
-   <br>
+   <br><br>
 
-   <span class="field3"> Description: <br> <input type="text" [(ngModel)]="newCard.description"> </span>
+   <span class="field3"> Description: <input type="text" [(ngModel)]="newCard.description"> </span>
 
    <span class="field4"> Creator: <input type="text" [(ngModel)]="newCard.creator"> <br> </span>
 
-   <br>
+   <br><br>
    
-   <span class="field5"> Image Link: <br> <input type="text" [(ngModel)]="newCard.imgURL"> </span>
+   <span class="field5"> Image Link:  <input type="text" [(ngModel)]="newCard.imgURL"> </span>
 
    <span class="field6"> Type: <input type="text" [(ngModel)]="newCard.type"> <br> </span>
+   
+</div> 
 
     <div>
         <button (click)="addCard()">Add Content</button>
     </div>
 </div>
+<hr>
