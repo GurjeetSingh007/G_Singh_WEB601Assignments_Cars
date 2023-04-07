@@ -20,6 +20,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { NewContentDialogComponent } from './new-content-dialog/new-content-dialog.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     ContentTypeFilterPipe,
     HoverAffectDirective,
     MessageComponent,
-    ModifyContentComponent
+    ModifyContentComponent,
+    NewContentDialogComponent
   ],
   imports: [
     BrowserModule,

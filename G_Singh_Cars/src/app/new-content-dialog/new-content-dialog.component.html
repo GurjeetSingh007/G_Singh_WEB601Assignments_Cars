@@ -1,0 +1,28 @@
+<div>
+
+    <br>
+
+    <mat-form-field>
+        <span class="field2">ID: <input matInput type="text" disabled> <br> </span>
+    </mat-form-field>
+    <mat-form-field>
+        <span class="field2">Title: <input matInput type="text" [(ngModel)]="newCard.title"> <br> </span>
+    </mat-form-field>
+    <mat-form-field>
+        <span class="field3"> Description: <br> <input matInput type="text" [(ngModel)]="newCard.description"> </span>
+    </mat-form-field>
+    <mat-form-field>
+        <span class="field4"> Creator: <input matInput type="text" [(ngModel)]="newCard.creator"> <br> </span>
+    </mat-form-field>
+    <mat-form-field>
+        <span class="field5"> Image Link: <br> <input matInput type="text" [(ngModel)]="newCard.imgURL"> </span>
+    </mat-form-field>
+    <mat-form-field>
+        <span class="field6"> Type: <input matInput type="text" [(ngModel)]="newCard.type"> <br> </span>
+    </mat-form-field>
+
+    <div>
+        <button mat-raised-button color="accent" mat-dialog-close>Close</button>
+        <button mat-raised-button color="primary" (click)="addCard()">Add Content</button>
+    </div>
+</div>
