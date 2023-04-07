@@ -2,22 +2,23 @@
 
     <br>
 
-
-   <span class="field2">Title: <input type="text" [(ngModel)]="newCard.title"> <br> </span>
-    
-   <br>
-
-   <span class="field3"> Description: <br> <input type="text" [(ngModel)]="newCard.description"> </span>
-
-   <span class="field4"> Creator: <input type="text" [(ngModel)]="newCard.creator"> <br> </span>
-
-   <br>
-   
-   <span class="field5"> Image Link: <br> <input type="text" [(ngModel)]="newCard.imgURL"> </span>
-
-   <span class="field6"> Type: <input type="text" [(ngModel)]="newCard.type"> <br> </span>
+    <mat-form-field>
+        <span class="field2">Title: <input matInput type="text" [(ngModel)]="newCard.title"> <br> </span>
+    </mat-form-field>
+    <mat-form-field>
+        <span class="field3"> Description: <br> <input matInput type="text" [(ngModel)]="newCard.description"> </span>
+    </mat-form-field>
+    <mat-form-field>
+        <span class="field4"> Creator: <input matInput type="text" [(ngModel)]="newCard.creator"> <br> </span>
+    </mat-form-field>
+    <mat-form-field>
+        <span class="field5"> Image Link: <br> <input matInput type="text" [(ngModel)]="newCard.imgURL"> </span>
+    </mat-form-field>
+    <mat-form-field>
+        <span class="field6"> Type: <input matInput type="text" [(ngModel)]="newCard.type"> <br> </span>
+    </mat-form-field>
 
     <div>
-        <button (click)="addCard()">Add Content</button>
+        <button mat-raised-button color="primary" (click)="addCard()">Add Content</button>
     </div>
 </div>

@@ -1,7 +1,9 @@
 <app-modify-content (onCreation)="addCard($event)"></app-modify-content>
 <div>
-    <input type="text" [(ngModel)]="titleValue" placeholder="Search For Title...">
-    <button (click)="titleSearch()">Search</button>
+    <mat-form-field>
+        <input matInput type="text" [(ngModel)]="titleValue" placeholder="Search For Title...">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="titleSearch()">Search</button>
 </div>
 
 <div *ngIf="isTitleFound !== null">
