@@ -25,6 +25,12 @@ export class ContentListComponent {
     console.log(`ID: ${card.id}`);
     console.log(`Title: ${card.title}`);
   }
+  addCard(newCard: Content){
+    this.CarsService.addContent(newCard).subscribe( newCardFromServer => {
+      this.cards.push(newCardFromServer);
+      this.cards = [...this.cards];
+    })
+  }
 
   ngOnInit(){
     this.CarsService.getContent().subscribe(cards => this.cards = cards);
