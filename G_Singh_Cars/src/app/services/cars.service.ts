@@ -23,9 +23,9 @@ export class CarsService {
   }
 
   getContentById(id: number): Observable<any> {
-    const content = cardsArray.find(c => c.id === id);
+    const content = this.http.get<Content>('api/cars/' + id);
     this.messageService.addMessage(`Content item at id: ${id}`);
-    return of(content);
+    return content;
   }
 
   addContent(newCar: Content): Observable<Content>{
