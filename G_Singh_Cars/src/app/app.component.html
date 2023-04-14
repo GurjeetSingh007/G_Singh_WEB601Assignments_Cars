@@ -1,30 +1,4 @@
-<mat-card class="no-type card">
-        
-       <mat-card-header>
-            <div *ngIf="topContent.imgURL; else NoImage">
-                <img [src]="topContent.imgURL" alt={{topContent.title}} (click)="log()">
-            </div>
-            <ng-template #NoImage>
-                <img [src]="img" alt={{topContent.title}} (click)="log()">
-            </ng-template>
-       </mat-card-header>
-        <mat-card-content>
-            <h1>{{topContent.title}}</h1>
-            <p>{{topContent.description}}</p>
-            <div>Creator: {{topContent.creator}}</div>
-            <div appHoverAffect='underline'>Type: {{topContent.type}}</div>
-            <div *ngIf="topContent.tags">Tags: 
-                <span *ngFor="let tag of topContent.tags" appHoverAffect="bold">
-                    {{tag}},
-                </span>
-            </div>
-        </mat-card-content>
-</mat-card>
 
-<mat-divider></mat-divider>
-
-<app-content-list></app-content-list>
-
-<mat-divider></mat-divider>
+<router-outlet></router-outlet>
 
 <app-message></app-message>

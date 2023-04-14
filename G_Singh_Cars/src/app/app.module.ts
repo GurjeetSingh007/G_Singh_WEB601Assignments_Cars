@@ -23,6 +23,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { NewContentDialogComponent } from './new-content-dialog/new-content-dialog.component';
 import { ContentDetailComponent } from './content-detail/content-detail.component';
 
+import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +47,7 @@ import { ContentDetailComponent } from './content-detail/content-detail.componen
     MatCardModule,
     MatDividerModule,
     MatTooltipModule,
+    AppRoutingModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
       delay: 500
