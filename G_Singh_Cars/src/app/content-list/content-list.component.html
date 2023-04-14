@@ -42,7 +42,7 @@
 
 <div>
     <h1>Muscle Car</h1>
-    <mat-card *ngFor="let card of cards | contentTypeFilter" class="no-type card">
+    <mat-card *ngFor="let card of cards | contentTypeFilter:'Muscle Car'" class="no-type card">
         
         <mat-card-header>
             <div *ngIf="card.imgURL; else NoImage">
@@ -70,7 +70,7 @@
 
 <div>
     <h1>Sports Car</h1>
-    <mat-card *ngFor="let card of cards | contentTypeFilter" class="no-type card">
+    <mat-card *ngFor="let card of cards | contentTypeFilter:'Sports Car'" class="no-type card">
         
         <mat-card-header>
             <div *ngIf="card.imgURL; else NoImage">
