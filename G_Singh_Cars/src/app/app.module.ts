@@ -21,6 +21,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { NewContentDialogComponent } from './new-content-dialog/new-content-dialog.component';
+import { ContentDetailComponent } from './content-detail/content-detail.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NewContentDialogComponent } from './new-content-dialog/new-content-dial
     HoverAffectDirective,
     MessageComponent,
     ModifyContentComponent,
-    NewContentDialogComponent
+    NewContentDialogComponent,
+    ContentDetailComponent
   ],
   imports: [
     BrowserModule,
