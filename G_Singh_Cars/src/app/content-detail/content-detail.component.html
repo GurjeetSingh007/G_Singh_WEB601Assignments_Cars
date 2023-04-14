@@ -1,4 +1,4 @@
-<div>
+<div class="content">
     <div *ngIf="card.imgURL; else NoImage">
         <img [src]="card.imgURL" alt={{card.title}} (click)="log(card)">
     </div>
